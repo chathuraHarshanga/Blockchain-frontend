@@ -1,0 +1,407 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Fira Mono", monospace;
+  min-height: 9vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  transition: 0.6s;
+  z-index: 1000;
+}
+
+.logo {
+  color: aliceblue;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 1.4rem;
+}
+
+.navi-links {
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+}
+
+.navi-links li {
+  list-style: none;
+}
+
+.navi-links a {
+  color: aliceblue;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.about {
+  min-height: 100vh;
+  padding-top: 9vh;
+  flex-wrap: wrap;
+}
+.about-content {
+  z-index: 1;
+  position: absolute;
+}
+.background-animation lottie-player {
+  z-index: -1;
+  position: absolute;
+  height: 25vw;
+  width: 25vw;
+  left: 70%;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: aliceblue;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+/* media quaries starts here */
+@media screen and (max-width: 1500px) {
+  .navi-links {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .coding-gif {
+    position: absolute;
+    top: 40vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+  .navi-links {
+    position: absolute;
+    right: 0px;
+    height: 95vh;
+    top: 7vh;
+
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    z-index: 1;
+  }
+  .navi-links li {
+    opacity: 0;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+  .navi-links a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .animation-text {
+    font-size: 20px;
+  }
+  .animation-text a {
+    margin: 10px 2px;
+    padding: 9px 8px;
+    font-size: 15px;
+  }
+
+  .container-box {
+    margin-left: 10px;
+  }
+
+  .coding-gif {
+    display: none;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+/* media quaries ends here  */
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.fixed {
+  background-color: rgba(0, 0, 0, 0.815);
+  min-height: 7vh;
+}
+
+/* home page text animation */
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: #fff;
+  font-size: 50px;
+  font-family: "Fira Mono", monospace;
+  letter-spacing: 1px;
+  background-color: black;
+}
+
+.animation-text {
+  animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch {
+  2%,
+  64% {
+    transform: translate(2px, 0) skew(0deg);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0) skew(0deg);
+  }
+  62% {
+    transform: translate(0, 0) skew(5deg);
+  }
+}
+
+@keyframes glitchTop {
+  2%,
+  64% {
+    transform: translate(2px, -2px);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 2px);
+  }
+  62% {
+    transform: translate(13px, -1px) skew(-13deg);
+  }
+}
+
+.animation-text:after {
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom {
+  2%,
+  64% {
+    transform: translate(-2px, 0);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0);
+  }
+  62% {
+    transform: translate(-22px, 5px) skew(21deg);
+  }
+}
+
+.resume {
+  min-height: 100vh;
+  padding-top: 9vh;
+  background-color: #fff;
+}
+
+.portfolio {
+  min-height: 100vh;
+  padding-top: 9vh;
+  background-color: #fff;
+}
+
+.blog {
+  min-height: 100vh;
+  padding-top: 9vh;
+  background-color: #fff;
+}
+
+.my-projects-button {
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  padding: 14px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: "Fira Mono", monospace;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.my-projects-button:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+.flex-container {
+  display: flex;
+}
+.content {
+  margin: auto 5rem auto 5rem;
+}
+h3 {
+  font-family: "Fira Mono", monospace;
+  font-size: 2rem;
+  margin-left: 3rem;
+  color: rgb(116, 116, 116);
+}
+
+
+.content-body {
+  margin: 3rem;
+}
+
+.content-body img {
+  height: 17vw;
+  width: 17vw;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about p {
+  font-family: "Spline Sans", sans-serif;
+  font-size: 1.1rem;
+  margin: 3rem;
+  color: rgb(116, 116, 116);
+  text-align: justify;
+}
+.right-container {
+  margin-left: 3rem;
+}
+.right-container h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  margin-left: 3rem;
+  color: #173b6c;
+}
+.column ul {
+  font-family: "Spline Sans", sans-serif;
+  font-size: 1.1rem;
+  color: rgb(41, 41, 41);
+  text-align: justify;
+  margin: 0rem 2rem 1rem 3rem;
+  line-height: 1.4;
+}
+.column li {
+  padding-top: 1rem;
+  list-style: none;
+}
+
+.right-container p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.intro {
+  background: white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-text {
+  color: black;
+  font-size: 3rem;
+  font-family: "Heebo", sans-serif;
+}
+
+.slider {
+  background: rgb(196, 196, 196);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(100%);
+}
+.hide {
+  background: white;
+  overflow: hidden;
+}
+
+.hide span {
+  transform: translateY(100%);
+  display: inline-block;
+}
+
+.cool-emoji {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+
+
+/* Media quiaries */
+@media screen and (max-width: 1586px) {
+  
+}
+@media screen and (max-width: 1480px) {
+
+}
+
+@media screen and (max-width: 1024px) {
+  
+}
