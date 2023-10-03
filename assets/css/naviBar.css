@@ -289,6 +289,7 @@ nav {
   border-radius: 10px;
   min-height: 80vh;
   max-width: 60%;
+  background-color: #e3e3e3f1;
   
 }
 .home h4{
@@ -384,7 +385,7 @@ nav {
 }
 
 .meet-team-button {
-  background-color: rgb(255, 255, 255);
+  background-color: #e3e3e3f1;
   border: 2px solid rgb(0, 0, 0);
   color: rgb(0, 0, 0);
   padding: 14px 12px;
