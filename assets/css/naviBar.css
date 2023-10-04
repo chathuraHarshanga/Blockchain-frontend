@@ -73,12 +73,12 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 .about-content {
   z-index: 1;
   position: absolute;
-  background-color: #e6e6e6e6;
+  background-color: #f1f1f1ed;
 }
 .about h3{
   margin-left: 0;
@@ -97,7 +97,7 @@ nav {
   align-items: center;
   padding:1rem;
   margin-right: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .header-line{
   border-top: 2px solid #5f5f5f;
@@ -149,6 +149,43 @@ nav {
   border-top: none;
 }
 /* tab ends  */
+
+
+.marketing-video{
+  min-height: 100vh;
+  padding-top: 9vh;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.marketing-content{
+  padding: 3rem;
+  border-radius: 10px;
+  min-height: 80vh;
+  min-width: 70%;
+  box-shadow: 0 4px 8px 0 rgba(188, 188, 188, 0.854);
+  background-color: #4e4e4e6f;
+  
+}
+.video-box{
+  width: 50vw;
+  height: 60vh;
+  border: none;
+  margin-left: 3.2vw;
+  border-radius: 10px;
+}
+.video-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video-title h4{
+  font-size: 3rem;
+  color: #d0d0d0;
+  margin-bottom: 2rem;
+}
+
 
 
 .burger {
@@ -361,15 +398,48 @@ nav {
     transform: translate(-22px, 5px) skew(21deg);
   }
 }
-.marketing-video {
+
+.our-team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
   padding-top: 9vh;
   background-color: #fff;
 }
-.resume {
-  min-height: 100vh;
-  padding-top: 9vh;
-  background-color: #fff;
+.team-content{
+  padding: 3rem;
+  border-radius: 10px;
+  min-height: 80vh;
+  max-width: 74%;
+  box-shadow: 0 4px 8px 0 rgba(188, 188, 188, 0.854);
+  background-color: #4e4e4ed6;
+}
+.our-team h4{
+  font-size: 3rem;
+  color: #d7d7d7;
+}
+.team-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  background-color: #aaaaaaf1;
+  min-height: 60vh;
+}
+.profile-picture img{
+  width: 20vw;
+  height: 20vw;
+  margin: 1rem;
+}
+.profile-info {
+  margin: 2rem;
+}
+.profile-info h4{
+  padding-bottom:2rem ;
+  margin-top: -10rem;
 }
 
 .portfolio {
