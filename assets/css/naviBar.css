@@ -413,7 +413,14 @@ nav {
   min-height: 80vh;
   max-width: 74%;
   box-shadow: 0 4px 8px 0 rgba(188, 188, 188, 0.854);
-  background-color: #4e4e4ed6;
+  background-color: #1324407c;
+
+}
+.team-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 .our-team h4{
   font-size: 3rem;
@@ -426,13 +433,19 @@ nav {
   padding: 1rem;
   margin: 1rem;
   border-radius: 10px;
-  background-color: #aaaaaaf1;
+  background-color: #132440d6;
   min-height: 60vh;
+  box-shadow: 0 4px 8px 0 rgba(40, 110, 249, 0.854);
+}
+.team-box p{
+  color: #d0d0d0;
 }
 .profile-picture img{
   width: 20vw;
   height: 20vw;
   margin: 1rem;
+  margin-left: 2rem;
+  border-radius: 5px;
 }
 .profile-info {
   margin: 2rem;
