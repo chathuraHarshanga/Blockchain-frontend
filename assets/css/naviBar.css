@@ -405,7 +405,7 @@ nav {
   align-items: center;
   min-height: 100vh;
   padding-top: 9vh;
-  background-color: #fff;
+  background-color: #000000;
 }
 .team-content{
   padding: 3rem;
@@ -413,7 +413,7 @@ nav {
   min-height: 80vh;
   max-width: 74%;
   box-shadow: 0 4px 8px 0 rgba(188, 188, 188, 0.854);
-  background-color: #1324407c;
+  background-color: #ffffff81;
 
 }
 .team-title{
@@ -424,7 +424,7 @@ nav {
 }
 .our-team h4{
   font-size: 3rem;
-  color: #d7d7d7;
+  color: #545454;
 }
 .team-box{
   display: flex;
@@ -433,12 +433,13 @@ nav {
   padding: 1rem;
   margin: 1rem;
   border-radius: 10px;
-  background-color: #132440d6;
+  background-color: #ffffffc7;
   min-height: 60vh;
-  box-shadow: 0 4px 8px 0 rgba(40, 110, 249, 0.854);
+  box-shadow: 0 4px 8px 0 rgba(112, 112, 112, 0.854);
 }
 .team-box p{
-  color: #d0d0d0;
+  font-weight: bold;
+  color: #545454;
 }
 .profile-picture img{
   width: 20vw;
@@ -455,10 +456,113 @@ nav {
   margin-top: -10rem;
 }
 
-.portfolio {
+.our-services {
   min-height: 100vh;
   padding-top: 9vh;
   background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.our-services-content{
+
+}
+.our-services h2{
+  font-size: 3rem;
+  color: #e4e4e4;
+}
+.our-services-tiles{
+  margin: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.our-services-tiles-1{
+  margin: 2rem;
+  background-color: #e3e3e3f1;
+  height: 60vh;
+  width: 15vw;
+  box-shadow: 0 4px 8px 0 rgba(116, 116, 116, 0.854);
+  border-radius: 10px;
+  
+}
+.our-services-tiles-1 img{
+  height: 5rem;
+  width: 5rem;
+  margin: 1rem;
+  margin-top: 2rem;
+  margin-left: 10vh;
+}
+.our-services-tiles-1 h4{
+  margin: 1.5rem;
+  color: #000000;
+  font-size: 1rem;
+  
+}
+
+.our-services-tiles-2{
+  margin: 2rem;
+  background-color: #e3e3e3f1;
+  height: 60vh;
+  width: 15vw;
+  box-shadow: 0 4px 8px 0 rgba(116, 116, 116, 0.854);
+  border-radius: 10px;
+}
+.our-services-tiles-2 img{
+  height: 5rem;
+  width: 5rem;
+  margin: 1rem;
+  margin-top: 2rem;
+  margin-left: 10vh;
+}
+.our-services-tiles-2 h4{
+  margin: 1.5rem;
+  color: #000000;
+  font-size: 1rem;
+  
+}
+.our-services-tiles-3{
+  margin: 2rem;
+  background-color: #e3e3e3f1;
+  height: 60vh;
+  width: 15vw;
+  box-shadow: 0 4px 8px 0 rgba(116, 116, 116, 0.854);
+  border-radius: 10px;
+}
+.our-services-tiles-3 img{
+  height: 5rem;
+  width: 5rem;
+  margin: 1rem;
+  margin-top: 2rem;
+  margin-left: 10vh;
+}
+.our-services-tiles-3 h4{
+  margin: 1.5rem;
+  color: #000000;
+  font-size: 1rem;
+  
+}
+.our-services-tiles-4{
+  margin: 2rem;
+  background-color: #e3e3e3f1;
+  height: 60vh;
+  width: 15vw;
+  box-shadow: 0 4px 8px 0 rgba(116, 116, 116, 0.854);
+  border-radius: 10px;
+}
+.our-services-tiles-4 img{
+  height: 5rem;
+  width: 5rem;
+  margin: 1rem;
+  margin-top: 2rem;
+  margin-left: 10vh;
+}
+.our-services-tiles-4 h4{
+  margin: 1.5rem;
+  color: #000000;
+  font-size: 1rem;
+  
 }
 
 .blog {
