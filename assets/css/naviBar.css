@@ -81,7 +81,7 @@ nav {
 .about-content {
   z-index: 1;
   position: absolute;
-  background-color: #a9a9a9d6;
+  background-color: #e6e6e6d6;
 }
 .about h3{
   margin-left: 0;
@@ -171,7 +171,7 @@ nav {
   min-height: 80vh;
   min-width: 70%;
   box-shadow: 0 4px 8px 0 rgba(188, 188, 188, 0.86);
-  background-color: #4e4e4ea6;
+  background-color: #000000c1;
   
 }
 .video-box{
@@ -441,7 +441,7 @@ nav {
 }
 .our-team h4{
   font-size: 3rem;
-  color: #d3d3d3;
+  color: #000000;
 }
 .team-box{
   display: flex;
@@ -450,7 +450,7 @@ nav {
   padding: 1rem;
   margin: 1rem;
   border-radius: 10px;
-  background-color: #9d9d9ddd;
+  background-color: #e6e6e6d6;
   min-height: 60vh;
   box-shadow: 0 4px 8px 0 rgba(112, 112, 112, 0.854);
   overflow-y: scroll;
