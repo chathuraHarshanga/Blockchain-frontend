@@ -90,6 +90,9 @@ nav {
   margin-right: 1rem;
   font-size: 1.2rem;
   line-height: 1.5;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 .tab-buttons{
   display: flex;
@@ -336,6 +339,9 @@ nav {
 .home-left{
   max-width: 60%;
   padding: 2rem;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 .home h1{
   font-size: 3rem;
@@ -436,6 +442,9 @@ nav {
   background-color: #ffffffc7;
   min-height: 60vh;
   box-shadow: 0 4px 8px 0 rgba(112, 112, 112, 0.854);
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 .team-box p{
   font-weight: bold;
@@ -485,7 +494,12 @@ nav {
   width: 15vw;
   box-shadow: 0 4px 8px 0 rgba(116, 116, 116, 0.854);
   border-radius: 10px;
-  
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.our-services-tiles-1::-webkit-scrollbar {
+  display: none;
 }
 .our-services-tiles-1 img{
   height: 5rem;
@@ -508,6 +522,9 @@ nav {
   width: 15vw;
   box-shadow: 0 4px 8px 0 rgba(116, 116, 116, 0.854);
   border-radius: 10px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 .our-services-tiles-2 img{
   height: 5rem;
@@ -529,6 +546,9 @@ nav {
   width: 15vw;
   box-shadow: 0 4px 8px 0 rgba(116, 116, 116, 0.854);
   border-radius: 10px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 .our-services-tiles-3 img{
   height: 5rem;
@@ -550,6 +570,9 @@ nav {
   width: 15vw;
   box-shadow: 0 4px 8px 0 rgba(116, 116, 116, 0.854);
   border-radius: 10px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 .our-services-tiles-4 img{
   height: 5rem;
